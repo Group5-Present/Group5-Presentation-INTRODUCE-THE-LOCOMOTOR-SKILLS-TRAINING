@@ -2,107 +2,183 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>G5 | Basic Locomotor Skills</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
-    <!-- =========================
-         NAVIGATION
-    ========================== -->
+
+    <!-- =================================================
+         FIXED NAVIGATION
+    ================================================== -->
 
     <nav class="navbar">
 
         <div class="nav-container">
 
-            <div class="logo">
-                G5
-            </div>
 
-            <div class="nav-links">
+            <!-- G5 LOGO -->
 
-                <a href="#home">Home</a>
-                <a href="#intro">Intro</a>
-                <a href="#skills">Skills</a>
-                <a href="#balance">Balance</a>
-                <a href="#plyometric">Plyometric</a>
-                <a href="#summary">Summary</a>
+            <a href="#home" class="brand">
 
-            </div>
+                <div class="g5-logo">
+                    G5
+                </div>
+
+                <div class="brand-text">
+
+                    <strong>
+                        G5
+                    </strong>
+
+                    <span>
+                        Locomotor Skills
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <!-- NAVIGATION LINKS -->
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#home">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#intro">
+                        Intro
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#skills">
+                        Skills
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#balance">
+                        Balance
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#plyometric">
+                        Plyometric
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#conclusion">
+                        Summary
+                    </a>
+                </li>
+
+            </ul>
 
         </div>
 
     </nav>
 
 
-    <!-- =========================
+    <!-- =================================================
          HERO
-    ========================== -->
+    ================================================== -->
 
-    <section id="home" class="hero">
+    <header
+        class="hero"
+        id="home"
+    >
 
         <div class="hero-overlay"></div>
 
         <div class="hero-content">
 
+
+            <!-- G5 HERO LOGO -->
+
             <div class="hero-logo">
                 G5
             </div>
+
 
             <p class="eyebrow">
                 PHYSICAL EDUCATION
             </p>
 
+
             <h1>
                 Basic Locomotor Skills
             </h1>
 
+
             <p class="hero-description">
                 Learn the fundamental movements that help us
-                move efficiently, confidently, and safely.
+                move, balance, jump, run, and explore our environment.
             </p>
+
 
             <div class="hero-buttons">
 
-                <a href="#skills" class="btn primary-btn">
-                    Explore Skills
+                <a
+                    href="#intro"
+                    class="btn"
+                >
+                    Start Learning
                 </a>
 
-                <a href="#intro" class="btn secondary-btn">
-                    Learn More
+
+                <a
+                    href="#skills"
+                    class="btn btn-outline"
+                >
+                    Explore Skills
                 </a>
 
             </div>
 
         </div>
 
-    </section>
+    </header>
 
 
-    <!-- =========================
+    <!-- =================================================
          INTRODUCTION
-    ========================== -->
+    ================================================== -->
 
-    <section id="intro" class="section intro-section">
+    <section id="intro">
 
-        <div class="section-heading">
 
-            <p class="section-label">
-                GET STARTED
-            </p>
+        <div class="section-title">
+
+            <span class="section-label">
+                LET'S LEARN
+            </span>
 
             <h2>
-                What Are Locomotor Skills?
+                Introduction
             </h2>
 
             <p>
-                Locomotor skills are movements that allow the body
-                to travel from one place to another.
+                Understanding basic locomotor movements
             </p>
 
         </div>
@@ -110,42 +186,24 @@
 
         <div class="intro-box">
 
+
+            <div class="intro-image"></div>
+
+
             <div class="intro-content">
 
-                <h3>
-                    Moving With Purpose
-                </h3>
-
                 <p>
-                    Locomotor skills are important fundamental
-                    movements used in sports, games, exercise,
-                    and everyday activities.
+                    Locomotor skills are movements that allow the body
+                    to travel from one place to another. They are important
+                    for physical fitness, coordination, balance, agility,
+                    and participation in sports and everyday activities.
                 </p>
 
+
                 <p>
-                    These movements help develop coordination,
-                    balance, strength, agility, speed, and body
-                    control.
+                    These movements help us develop confidence and control
+                    while performing different physical activities.
                 </p>
-
-                <div class="intro-points">
-
-                    <div>
-                        <strong>01</strong>
-                        <span>Movement</span>
-                    </div>
-
-                    <div>
-                        <strong>02</strong>
-                        <span>Coordination</span>
-                    </div>
-
-                    <div>
-                        <strong>03</strong>
-                        <span>Body Control</span>
-                    </div>
-
-                </div>
 
             </div>
 
@@ -154,265 +212,233 @@
     </section>
 
 
-    <!-- =========================
-         LOCOMOTOR SKILLS
-    ========================== -->
+    <!-- =================================================
+         BASIC LOCOMOTOR SKILLS
+    ================================================== -->
 
-    <section id="skills" class="section skills-section">
+    <section id="skills">
 
-        <div class="section-heading">
 
-            <p class="section-label">
-                FUNDAMENTAL MOVEMENTS
-            </p>
+        <div class="section-title">
+
+            <span class="section-label">
+                MOVEMENT
+            </span>
 
             <h2>
                 Basic Locomotor Skills
             </h2>
 
             <p>
-                Explore eight fundamental movements used in
-                physical activities and sports.
+                Explore each fundamental movement
             </p>
 
         </div>
 
 
-        <div class="cards-grid">
+        <div class="cards">
 
 
             <!-- WALKING -->
 
-            <article class="card">
+            <div class="card">
 
                 <div class="card-image"></div>
 
-                <div class="card-content">
-
-                    <p class="card-number">
-                        01
-                    </p>
+                <div class="card-body">
 
                     <h3>
                         Walking
                     </h3>
 
                     <p>
-                        Walking is a basic movement where one foot
-                        moves forward at a time while maintaining
-                        balance and control.
+                        Moving forward by placing one foot in front
+                        of the other while maintaining balance and control.
                     </p>
 
                 </div>
 
-            </article>
+            </div>
 
 
             <!-- RUNNING -->
 
-            <article class="card">
+            <div class="card">
 
                 <div class="card-image"></div>
 
-                <div class="card-content">
-
-                    <p class="card-number">
-                        02
-                    </p>
+                <div class="card-body">
 
                     <h3>
                         Running
                     </h3>
 
                     <p>
-                        Running is a faster locomotor movement in
-                        which both feet briefly leave the ground.
+                        A faster locomotor movement where there is
+                        a brief period when both feet are off the ground.
                     </p>
 
                 </div>
 
-            </article>
+            </div>
 
 
             <!-- JUMPING -->
 
-            <article class="card">
+            <div class="card">
 
                 <div class="card-image"></div>
 
-                <div class="card-content">
-
-                    <p class="card-number">
-                        03
-                    </p>
+                <div class="card-body">
 
                     <h3>
                         Jumping
                     </h3>
 
                     <p>
-                        Jumping involves pushing off the ground
-                        with one or both feet and landing safely.
+                        Pushing off the ground with both feet and
+                        landing safely while developing power and coordination.
                     </p>
 
                 </div>
 
-            </article>
+            </div>
 
 
             <!-- HOPPING -->
 
-            <article class="card">
+            <div class="card">
 
                 <div class="card-image"></div>
 
-                <div class="card-content">
-
-                    <p class="card-number">
-                        04
-                    </p>
+                <div class="card-body">
 
                     <h3>
                         Hopping
                     </h3>
 
                     <p>
-                        Hopping is moving upward and forward using
-                        one foot while maintaining balance.
+                        Moving upward or forward using one foot while
+                        maintaining control and balance.
                     </p>
 
                 </div>
 
-            </article>
+            </div>
 
 
             <!-- SKIPPING -->
 
-            <article class="card">
+            <div class="card">
 
                 <div class="card-image"></div>
 
-                <div class="card-content">
-
-                    <p class="card-number">
-                        05
-                    </p>
+                <div class="card-body">
 
                     <h3>
                         Skipping
                     </h3>
 
                     <p>
-                        Skipping combines a step and a hop while
-                        alternating between the feet.
+                        A rhythmic movement combining a step and hop,
+                        alternating from one foot to the other.
                     </p>
 
                 </div>
 
-            </article>
+            </div>
 
 
             <!-- LEAPING -->
 
-            <article class="card">
+            <div class="card">
 
                 <div class="card-image"></div>
 
-                <div class="card-content">
-
-                    <p class="card-number">
-                        06
-                    </p>
+                <div class="card-body">
 
                     <h3>
                         Leaping
                     </h3>
 
                     <p>
-                        Leaping involves taking off from one foot
-                        and landing on the opposite foot.
+                        Taking off from one foot and landing on the
+                        opposite foot while covering distance.
                     </p>
 
                 </div>
 
-            </article>
+            </div>
 
 
             <!-- GALLOPING -->
 
-            <article class="card">
+            <div class="card">
 
                 <div class="card-image"></div>
 
-                <div class="card-content">
-
-                    <p class="card-number">
-                        07
-                    </p>
+                <div class="card-body">
 
                     <h3>
                         Galloping
                     </h3>
 
                     <p>
-                        Galloping uses a forward step followed by
-                        the trailing foot while maintaining rhythm.
+                        A forward movement where one foot leads while
+                        the other foot follows in a repeated pattern.
                     </p>
 
                 </div>
 
-            </article>
+            </div>
 
 
             <!-- SLIDING -->
 
-            <article class="card">
+            <div class="card">
 
                 <div class="card-image"></div>
 
-                <div class="card-content">
-
-                    <p class="card-number">
-                        08
-                    </p>
+                <div class="card-body">
 
                     <h3>
                         Sliding
                     </h3>
 
                     <p>
-                        Sliding is a sideways movement where one
-                        foot leads while the other follows.
+                        Moving sideways while keeping the body facing
+                        forward and maintaining a smooth rhythm.
                     </p>
 
                 </div>
 
-            </article>
+            </div>
+
 
         </div>
 
     </section>
 
 
-    <!-- =========================
-         BALANCE
-    ========================== -->
+    <!-- =================================================
+         SINGLE LEG BALANCE
+    ================================================== -->
 
-    <section id="balance" class="section balance-section">
+    <section id="balance">
 
-        <div class="section-heading">
 
-            <p class="section-label">
-                BODY CONTROL
-            </p>
+        <div class="section-title">
+
+            <span class="section-label">
+                BALANCE
+            </span>
 
             <h2>
-                Balance and Stability
+                Single Leg Balance Series
             </h2>
 
             <p>
-                Balance allows us to control our body while
-                performing different movements.
+                Build stability, control, and coordination
             </p>
 
         </div>
@@ -420,228 +446,314 @@
 
         <div class="balance-container">
 
-            <div class="balance-content">
 
-                <h3>
-                    Why Is Balance Important?
-                </h3>
+            <div class="balance-image"></div>
 
-                <p>
-                    Balance helps us maintain body control while
-                    standing, walking, running, jumping, and
-                    performing sports activities.
-                </p>
 
-                <ul class="balance-list">
+            <ul class="balance-list">
 
-                    <li>
-                        <strong>Posture</strong>
-                        Maintain proper body position.
-                    </li>
 
-                    <li>
-                        <strong>Coordination</strong>
-                        Control different body parts together.
-                    </li>
+                <li>
 
-                    <li>
-                        <strong>Stability</strong>
-                        Stay controlled while moving.
-                    </li>
+                    <span class="number">
+                        1
+                    </span>
 
-                    <li>
-                        <strong>Confidence</strong>
-                        Perform physical activities safely.
-                    </li>
+                    <div>
 
-                </ul>
+                        <strong>
+                            Basic Single-Leg Stand
+                        </strong>
 
-            </div>
+                        <br>
+
+                        Stand on one foot for 10–20 seconds.
+
+                    </div>
+
+                </li>
+
+
+                <li>
+
+                    <span class="number">
+                        2
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Single-Leg Reach
+                        </strong>
+
+                        <br>
+
+                        Balance on one leg while reaching forward.
+
+                    </div>
+
+                </li>
+
+
+                <li>
+
+                    <span class="number">
+                        3
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Side Reach
+                        </strong>
+
+                        <br>
+
+                        Reach sideways while maintaining your balance.
+
+                    </div>
+
+                </li>
+
+
+                <li>
+
+                    <span class="number">
+                        4
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Single-Leg Knee Lift
+                        </strong>
+
+                        <br>
+
+                        Lift one knee while keeping the standing leg stable.
+
+                    </div>
+
+                </li>
+
+
+                <li>
+
+                    <span class="number">
+                        5
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Single-Leg Hold
+                        </strong>
+
+                        <br>
+
+                        Hold a controlled position for as long as comfortable.
+
+                    </div>
+
+                </li>
+
+
+            </ul>
 
         </div>
 
     </section>
 
 
-    <!-- =========================
+    <!-- =================================================
          PLYOMETRIC
-    ========================== -->
+    ================================================== -->
 
-    <section id="plyometric" class="section plyo-section">
-
-        <div class="section-heading light-heading">
-
-            <p class="section-label">
-                POWER & EXPLOSIVENESS
-            </p>
-
-            <h2>
-                Plyometric Exercises
-            </h2>
-
-            <p>
-                Plyometric exercises use quick and powerful
-                movements to improve strength, speed, and power.
-            </p>
-
-        </div>
+    <section id="plyometric">
 
 
-        <div class="cards-grid plyo-grid">
+        <div class="plyo">
 
 
-            <article class="card plyo-card">
+            <div class="section-title">
 
-                <div class="card-content">
+                <span class="section-label">
+                    POWER
+                </span>
 
-                    <p class="card-number">
-                        01
-                    </p>
+                <h2>
+                    Plyometric Exercises
+                </h2>
+
+                <p>
+                    Develop explosive power and athletic movement
+                </p>
+
+            </div>
+
+
+            <div class="cards">
+
+
+                <!-- SQUAT JUMPS -->
+
+                <div class="card">
 
                     <h3>
                         Squat Jumps
                     </h3>
 
                     <p>
-                        A squat followed by an explosive jump that
-                        develops lower-body power.
+                        Bend into a squat and jump upward explosively.
+                        Land softly and repeat.
                     </p>
 
                 </div>
 
-            </article>
 
+                <!-- BROAD JUMPS -->
 
-            <article class="card plyo-card">
-
-                <div class="card-content">
-
-                    <p class="card-number">
-                        02
-                    </p>
+                <div class="card">
 
                     <h3>
                         Broad Jumps
                     </h3>
 
                     <p>
-                        A powerful forward jump that develops
-                        explosive strength and coordination.
+                        Jump forward from both feet and land
+                        with control.
                     </p>
 
                 </div>
 
-            </article>
 
+                <!-- JUMPING LUNGES -->
 
-            <article class="card plyo-card">
-
-                <div class="card-content">
-
-                    <p class="card-number">
-                        03
-                    </p>
+                <div class="card">
 
                     <h3>
                         Jumping Lunges
                     </h3>
 
                     <p>
-                        A dynamic lunge movement that improves
-                        leg strength, balance, and power.
+                        Alternate lunge positions through controlled
+                        explosive jumps.
                     </p>
 
                 </div>
 
-            </article>
 
+                <!-- STEP-UP JUMPS -->
 
-            <article class="card plyo-card">
-
-                <div class="card-content">
-
-                    <p class="card-number">
-                        04
-                    </p>
+                <div class="card">
 
                     <h3>
                         Step-Up Jumps
                     </h3>
 
                     <p>
-                        An explosive movement using a raised
-                        platform to develop lower-body power.
+                        Jump onto a stable low platform and
+                        step down safely.
                     </p>
 
                 </div>
 
-            </article>
 
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         SUMMARY
-    ========================== -->
-
-    <section id="summary" class="section summary-section">
-
-        <div class="summary-box">
-
-            <p class="section-label">
-                FINAL THOUGHT
-            </p>
-
-            <h2>
-                Move Better. Move Stronger.
-            </h2>
-
-            <p>
-                Locomotor skills form the foundation of many
-                physical activities. Practicing these movements
-                helps improve coordination, balance, agility,
-                strength, and confidence.
-            </p>
-
-            <p>
-                Developing these basic skills can help prepare
-                individuals for more advanced physical activities
-                and sports.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
-    <footer class="footer">
-
-        <div class="footer-content">
-
-            <div class="footer-logo">
-                G5
             </div>
 
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         CONCLUSION
+    ================================================== -->
+
+    <section id="conclusion">
+
+
+        <div class="conclusion">
+
+
+            <div class="section-title">
+
+                <span class="section-label">
+                    FINISH
+                </span>
+
+                <h2>
+                    Conclusion & Summary
+                </h2>
+
+            </div>
+
+
             <p>
-                Basic Locomotor Skills
+                Basic locomotor skills form the foundation of physical
+                movement. Walking, running, jumping, hopping, skipping,
+                leaping, galloping, and sliding help develop coordination,
+                balance, agility, and confidence.
             </p>
 
-            <p class="footer-small">
-                Physical Education
+
+            <p>
+                Combining these movements with single-leg balance
+                activities and plyometric exercises can further improve
+                physical performance.
             </p>
+
+
+            <a
+                href="#home"
+                class="btn"
+            >
+                Back to Top
+            </a>
+
 
         </div>
+
+    </section>
+
+
+    <!-- =================================================
+         FOOTER
+    ================================================== -->
+
+    <footer>
+
+
+        <div class="footer-logo">
+
+            <span class="g5-logo small">
+                G5
+            </span>
+
+            <strong>
+                Basic Locomotor Skills
+            </strong>
+
+        </div>
+
+
+        <p>
+            Learn • Move • Balance • Improve
+        </p>
+
+
+        <p class="copyright">
+            © 2026 G5 Physical Education
+        </p>
+
 
     </footer>
 
 
+    <!-- JavaScript -->
+
     <script src="script.js"></script>
+
 
 </body>
 
