@@ -1,3 +1,4 @@
+```css
 /* =====================================================
    GENERAL
 ===================================================== */
@@ -21,34 +22,13 @@ body {
         Helvetica,
         sans-serif;
 
+    background: #f4f8ff;
+
     color: #1e293b;
 
     line-height: 1.6;
-
-    /*
-       SPORTY WEBSITE BACKGROUND
-    */
-
-    background:
-        repeating-linear-gradient(
-            135deg,
-            rgba(37, 99, 235, 0.035) 0px,
-            rgba(37, 99, 235, 0.035) 3px,
-            transparent 3px,
-            transparent 35px
-        ),
-        radial-gradient(
-            circle at 10% 20%,
-            rgba(6, 182, 212, 0.12),
-            transparent 220px
-        ),
-        radial-gradient(
-            circle at 90% 80%,
-            rgba(37, 99, 235, 0.10),
-            transparent 250px
-        ),
-        #f4f8ff;
 }
+
 
 
 /* =====================================================
@@ -66,12 +46,7 @@ body {
     z-index: 1000;
 
     background:
-        linear-gradient(
-            90deg,
-            rgba(30, 64, 175, 0.98),
-            rgba(37, 99, 235, 0.98),
-            rgba(6, 182, 212, 0.96)
-        );
+        rgba(37, 99, 235, 0.96);
 
     backdrop-filter: blur(12px);
 
@@ -84,23 +59,21 @@ body {
 
 
 .nav-container {
-    width:
-        min(1200px, 100%);
+    width: min(1200px, 100%);
 
     margin: auto;
 
-    padding:
-        12px 20px;
+    padding: 12px 20px;
 
     display: flex;
 
-    justify-content:
-        space-between;
+    justify-content: space-between;
 
     align-items: center;
 
     gap: 20px;
 }
+
 
 
 /* =====================================================
@@ -171,8 +144,10 @@ body {
 }
 
 
+
 /* =====================================================
    NAVIGATION LINKS
+   NO DRAWER
 ===================================================== */
 
 .nav-links {
@@ -197,15 +172,13 @@ body {
 
     text-decoration: none;
 
-    padding:
-        8px 11px;
+    padding: 8px 11px;
 
     border-radius: 8px;
 
     font-size: 13px;
 
-    transition:
-        0.25s ease;
+    transition: 0.25s ease;
 }
 
 
@@ -218,8 +191,9 @@ body {
 }
 
 
+
 /* =====================================================
-   SPORTY HERO
+   HERO
 ===================================================== */
 
 .hero {
@@ -240,85 +214,12 @@ body {
 
     color: white;
 
-    overflow: hidden;
-
-
-    /*
-       SPORTY BACKGROUND
-       No image used.
-    */
-
     background:
-        radial-gradient(
-            circle at 15% 25%,
-            rgba(255, 255, 255, 0.18) 0,
-            rgba(255, 255, 255, 0.18) 90px,
-            transparent 91px
-        ),
-
-        radial-gradient(
-            circle at 85% 75%,
-            rgba(255, 255, 255, 0.10) 0,
-            rgba(255, 255, 255, 0.10) 150px,
-            transparent 151px
-        ),
-
-        repeating-linear-gradient(
-            135deg,
-            rgba(255, 255, 255, 0.10) 0,
-            rgba(255, 255, 255, 0.10) 10px,
-            transparent 10px,
-            transparent 55px
-        ),
-
         linear-gradient(
             135deg,
-            #1e3a8a,
-            #2563eb 45%,
+            #2563eb,
             #06b6d4
         );
-}
-
-
-/*
-   Sporty circular decoration
-*/
-
-.hero::before {
-    content: "";
-
-    position: absolute;
-
-    width: 500px;
-    height: 500px;
-
-    right: -180px;
-    top: -160px;
-
-    border:
-        3px solid
-        rgba(255, 255, 255, 0.14);
-
-    border-radius: 50%;
-}
-
-
-.hero::after {
-    content: "";
-
-    position: absolute;
-
-    width: 350px;
-    height: 350px;
-
-    left: -160px;
-    bottom: -150px;
-
-    border:
-        3px solid
-        rgba(255, 255, 255, 0.10);
-
-    border-radius: 50%;
 }
 
 
@@ -330,9 +231,8 @@ body {
     background:
         linear-gradient(
             135deg,
-            rgba(15, 23, 42, 0.12),
-            transparent 50%,
-            rgba(15, 23, 42, 0.18)
+            rgba(29, 78, 216, 0.90),
+            rgba(6, 182, 212, 0.78)
         );
 }
 
@@ -342,7 +242,7 @@ body {
 
     max-width: 900px;
 
-    z-index: 2;
+    z-index: 1;
 }
 
 
@@ -409,6 +309,7 @@ body {
 }
 
 
+
 /* =====================================================
    BUTTONS
 ===================================================== */
@@ -442,8 +343,7 @@ body {
 
     text-decoration: none;
 
-    transition:
-        0.3s;
+    transition: 0.3s;
 
     margin: 5px;
 }
@@ -476,6 +376,7 @@ body {
 }
 
 
+
 /* =====================================================
    SECTIONS
 ===================================================== */
@@ -490,20 +391,6 @@ section {
         100px 20px;
 
     scroll-margin-top: 70px;
-
-    position: relative;
-}
-
-
-section:nth-of-type(even) {
-    background:
-        repeating-linear-gradient(
-            135deg,
-            rgba(37, 99, 235, 0.025) 0,
-            rgba(37, 99, 235, 0.025) 3px,
-            transparent 3px,
-            transparent 35px
-        );
 }
 
 
@@ -546,15 +433,13 @@ section:nth-of-type(even) {
 }
 
 
+
 /* =====================================================
    INTRODUCTION
 ===================================================== */
 
 .intro-box {
     display: grid;
-
-    grid-template-columns:
-        1fr 1.2fr;
 
     overflow: hidden;
 
@@ -565,84 +450,6 @@ section:nth-of-type(even) {
     box-shadow:
         0 12px 35px
         rgba(37, 99, 235, 0.10);
-
-    border:
-        1px solid #dbeafe;
-}
-
-
-/*
-   No image.
-   This is now a sporty decorative panel.
-*/
-
-.intro-image {
-    min-height: 350px;
-
-    background:
-        repeating-linear-gradient(
-            135deg,
-            rgba(255, 255, 255, 0.14) 0,
-            rgba(255, 255, 255, 0.14) 12px,
-            transparent 12px,
-            transparent 45px
-        ),
-
-        radial-gradient(
-            circle at 30% 40%,
-            rgba(255, 255, 255, 0.18),
-            transparent 120px
-        ),
-
-        linear-gradient(
-            135deg,
-            #1d4ed8,
-            #06b6d4
-        );
-
-    position: relative;
-}
-
-
-.intro-image::before {
-    content: "";
-
-    position: absolute;
-
-    width: 180px;
-    height: 180px;
-
-    border:
-        18px solid
-        rgba(255, 255, 255, 0.10);
-
-    border-radius: 50%;
-
-    left: 50%;
-    top: 50%;
-
-    transform:
-        translate(-50%, -50%);
-}
-
-
-.intro-image::after {
-    content: "";
-
-    position: absolute;
-
-    width: 65%;
-
-    height: 8px;
-
-    background:
-        rgba(255, 255, 255, 0.20);
-
-    transform:
-        rotate(-25deg);
-
-    left: 18%;
-    top: 45%;
 }
 
 
@@ -667,6 +474,7 @@ section:nth-of-type(even) {
 .intro-content p:last-child {
     margin-bottom: 0;
 }
+
 
 
 /* =====================================================
@@ -716,73 +524,47 @@ section:nth-of-type(even) {
 }
 
 
-/*
-   Empty card-image.
-   No photo.
-   No icon.
-   Just sporty decoration.
-*/
-
 .card-image {
-    height: 120px;
+    height: 100px;
 
     position: relative;
 
     overflow: hidden;
 
     background:
-        repeating-linear-gradient(
-            135deg,
-            rgba(255, 255, 255, 0.16) 0,
-            rgba(255, 255, 255, 0.16) 10px,
-            transparent 10px,
-            transparent 32px
-        ),
-
         linear-gradient(
             135deg,
-            #2563eb,
-            #06b6d4
+            #dbeafe,
+            #cffafe
         );
 }
 
 
-.card-image::before {
-    content: "";
-
+.skill-icon {
     position: absolute;
 
-    width: 80px;
-    height: 80px;
+    left: 50%;
 
-    border:
-        8px solid
-        rgba(255, 255, 255, 0.12);
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 48px;
+    height: 48px;
+
+    display: grid;
+
+    place-items: center;
+
+    background: white;
 
     border-radius: 50%;
 
-    right: 20px;
-    top: 20px;
-}
+    font-size: 25px;
 
-
-.card-image::after {
-    content: "";
-
-    position: absolute;
-
-    width: 70%;
-
-    height: 6px;
-
-    background:
-        rgba(255, 255, 255, 0.20);
-
-    transform:
-        rotate(-25deg);
-
-    left: -5%;
-    top: 50%;
+    box-shadow:
+        0 5px 15px
+        rgba(0, 0, 0, 0.15);
 }
 
 
@@ -807,129 +589,17 @@ section:nth-of-type(even) {
 }
 
 
+
 /* =====================================================
    BALANCE
 ===================================================== */
 
 .balance-container {
-    background:
-        repeating-linear-gradient(
-            135deg,
-            rgba(37, 99, 235, 0.035) 0,
-            rgba(37, 99, 235, 0.035) 4px,
-            transparent 4px,
-            transparent 35px
-        ),
-
-        linear-gradient(
-            135deg,
-            #dbeafe,
-            #ecfeff
-        );
+    background: #dbeafe;
 
     padding: 25px;
 
     border-radius: 25px;
-
-    border:
-        1px solid #bfdbfe;
-
-    position: relative;
-
-    overflow: hidden;
-}
-
-
-/*
-   Decorative sporty balance background
-*/
-
-.balance-container::before {
-    content: "";
-
-    position: absolute;
-
-    width: 280px;
-    height: 280px;
-
-    right: -100px;
-    top: -100px;
-
-    border:
-        25px solid
-        rgba(37, 99, 235, 0.08);
-
-    border-radius: 50%;
-}
-
-
-.balance-image {
-    height: 170px;
-
-    overflow: hidden;
-
-    border-radius: 18px;
-
-    margin-bottom: 25px;
-
-    background:
-        repeating-linear-gradient(
-            135deg,
-            rgba(255, 255, 255, 0.20) 0,
-            rgba(255, 255, 255, 0.20) 10px,
-            transparent 10px,
-            transparent 45px
-        ),
-
-        linear-gradient(
-            135deg,
-            #2563eb,
-            #06b6d4
-        );
-
-    position: relative;
-}
-
-
-.balance-image::before {
-    content: "";
-
-    position: absolute;
-
-    width: 190px;
-    height: 190px;
-
-    border:
-        15px solid
-        rgba(255, 255, 255, 0.12);
-
-    border-radius: 50%;
-
-    left: 50%;
-    top: 50%;
-
-    transform:
-        translate(-50%, -50%);
-}
-
-
-.balance-image::after {
-    content: "";
-
-    position: absolute;
-
-    width: 75%;
-
-    height: 7px;
-
-    background:
-        rgba(255, 255, 255, 0.20);
-
-    left: 12%;
-    top: 50%;
-
-    transform:
-        rotate(-15deg);
 }
 
 
@@ -939,10 +609,6 @@ section:nth-of-type(even) {
     max-width: 800px;
 
     margin: auto;
-
-    position: relative;
-
-    z-index: 2;
 }
 
 
@@ -951,8 +617,7 @@ section:nth-of-type(even) {
 
     margin: 12px 0;
 
-    padding:
-        17px 20px;
+    padding: 17px 20px;
 
     border-radius: 12px;
 
@@ -966,8 +631,7 @@ section:nth-of-type(even) {
         0 3px 10px
         rgba(0, 0, 0, 0.05);
 
-    transition:
-        0.25s;
+    transition: 0.25s;
 }
 
 
@@ -1000,27 +664,13 @@ section:nth-of-type(even) {
 }
 
 
+
 /* =====================================================
    PLYOMETRIC
 ===================================================== */
 
 .plyo {
-    background:
-        repeating-linear-gradient(
-            135deg,
-            rgba(255, 255, 255, 0.035) 0,
-            rgba(255, 255, 255, 0.035) 8px,
-            transparent 8px,
-            transparent 45px
-        ),
-
-        radial-gradient(
-            circle at 80% 20%,
-            rgba(6, 182, 212, 0.18),
-            transparent 180px
-        ),
-
-        #0f172a;
+    background: #0f172a;
 
     color: white;
 
@@ -1028,38 +678,7 @@ section:nth-of-type(even) {
 
     border-radius: 28px;
 
-    padding:
-        70px 25px;
-
-    position: relative;
-
-    overflow: hidden;
-}
-
-
-.plyo::before {
-    content: "";
-
-    position: absolute;
-
-    width: 300px;
-    height: 300px;
-
-    right: -100px;
-    bottom: -120px;
-
-    border:
-        25px solid
-        rgba(6, 182, 212, 0.08);
-
-    border-radius: 50%;
-}
-
-
-.plyo .section-title {
-    position: relative;
-
-    z-index: 2;
+    padding: 70px 25px;
 }
 
 
@@ -1074,44 +693,13 @@ section:nth-of-type(even) {
 
 
 .plyo .card {
-    background:
-        linear-gradient(
-            145deg,
-            #1e293b,
-            #172554
-        );
+    background: #1e293b;
 
     color: white;
 
     border-top-color: #38bdf8;
 
     padding: 30px;
-
-    position: relative;
-
-    z-index: 2;
-}
-
-
-.plyo .card::before {
-    content: "";
-
-    position: absolute;
-
-    top: 0;
-    right: 0;
-
-    width: 100px;
-    height: 100px;
-
-    background:
-        repeating-linear-gradient(
-            135deg,
-            rgba(6, 182, 212, 0.10) 0,
-            rgba(6, 182, 212, 0.10) 8px,
-            transparent 8px,
-            transparent 25px
-        );
 }
 
 
@@ -1119,20 +707,31 @@ section:nth-of-type(even) {
     color: #7dd3fc;
 
     margin-bottom: 10px;
-
-    position: relative;
-
-    z-index: 2;
 }
 
 
 .plyo .card p {
     color: #cbd5e1;
-
-    position: relative;
-
-    z-index: 2;
 }
+
+
+.plyo-icon {
+    width: 65px;
+    height: 65px;
+
+    display: grid;
+
+    place-items: center;
+
+    margin-bottom: 15px;
+
+    border-radius: 18px;
+
+    background: #0f3b63;
+
+    font-size: 32px;
+}
+
 
 
 /* =====================================================
@@ -1143,14 +742,6 @@ section:nth-of-type(even) {
     text-align: center;
 
     background:
-        repeating-linear-gradient(
-            135deg,
-            rgba(37, 99, 235, 0.035) 0,
-            rgba(37, 99, 235, 0.035) 4px,
-            transparent 4px,
-            transparent 35px
-        ),
-
         linear-gradient(
             135deg,
             #eff6ff,
@@ -1159,34 +750,7 @@ section:nth-of-type(even) {
 
     border-radius: 25px;
 
-    padding:
-        55px 25px;
-
-    border:
-        1px solid #dbeafe;
-
-    position: relative;
-
-    overflow: hidden;
-}
-
-
-.conclusion::before {
-    content: "";
-
-    position: absolute;
-
-    width: 220px;
-    height: 220px;
-
-    right: -90px;
-    top: -100px;
-
-    border:
-        20px solid
-        rgba(37, 99, 235, 0.06);
-
-    border-radius: 50%;
+    padding: 55px 25px;
 }
 
 
@@ -1197,11 +761,8 @@ section:nth-of-type(even) {
         0 auto 15px;
 
     font-size: 18px;
-
-    position: relative;
-
-    z-index: 2;
 }
+
 
 
 /* =====================================================
@@ -1209,23 +770,13 @@ section:nth-of-type(even) {
 ===================================================== */
 
 footer {
-    background:
-        repeating-linear-gradient(
-            135deg,
-            rgba(255, 255, 255, 0.035) 0,
-            rgba(255, 255, 255, 0.035) 8px,
-            transparent 8px,
-            transparent 45px
-        ),
-
-        #0f172a;
+    background: #0f172a;
 
     color: #cbd5e1;
 
     text-align: center;
 
-    padding:
-        35px 20px;
+    padding: 35px 20px;
 }
 
 
@@ -1263,6 +814,7 @@ footer {
 }
 
 
+
 /* =====================================================
    TABLET
 ===================================================== */
@@ -1286,6 +838,11 @@ footer {
         width: 100%;
     }
 
+
+    /*
+       Navigation stays visible.
+       It does NOT become a drawer.
+    */
 
     .nav-links {
         width: 100%;
@@ -1328,11 +885,6 @@ footer {
     }
 
 
-    .intro-image {
-        min-height: 220px;
-    }
-
-
     .intro-content {
         padding:
             28px 22px;
@@ -1345,6 +897,7 @@ footer {
     }
 
 }
+
 
 
 /* =====================================================
@@ -1389,32 +942,39 @@ footer {
         height: 65px;
 
         font-size: 26px;
+
+        border-radius: 18px;
     }
 
 
-    .intro-image {
-        min-height: 180px;
-    }
-
-
-    .balance-image {
-        height: 140px;
+    .section-title {
+        margin-bottom: 30px;
     }
 
 
     .balance-list li {
         align-items: flex-start;
+
+        font-size: 14px;
     }
 
 
-    .plyo {
+    .number {
+        min-width: 30px;
+
+        height: 30px;
+    }
+
+
+    .card-image {
+        height: 90px;
+    }
+
+
+    .conclusion {
         padding:
-            45px 12px;
-    }
-
-
-    .plyo .card {
-        padding: 25px;
+            40px 18px;
     }
 
 }
+```
