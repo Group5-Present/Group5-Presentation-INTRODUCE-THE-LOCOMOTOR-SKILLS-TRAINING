@@ -5,10 +5,8 @@
 
 * {
     box-sizing: border-box;
-
     margin: 0;
     padding: 0;
-
     scroll-behavior: smooth;
 }
 
@@ -216,14 +214,12 @@ body {
 
     color: white;
 
-    background-image:
-        url(
-            "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=1800&q=85"
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #06b6d4
         );
-
-    background-size: cover;
-
-    background-position: center;
 }
 
 
@@ -445,9 +441,6 @@ section {
 .intro-box {
     display: grid;
 
-    grid-template-columns:
-        1fr 1.2fr;
-
     overflow: hidden;
 
     background: white;
@@ -457,21 +450,6 @@ section {
     box-shadow:
         0 12px 35px
         rgba(37, 99, 235, 0.10);
-}
-
-
-.intro-image {
-    min-height: 350px;
-}
-
-
-.intro-image img {
-    width: 100%;
-    height: 100%;
-
-    display: block;
-
-    object-fit: cover;
 }
 
 
@@ -547,40 +525,29 @@ section {
 
 
 .card-image {
-    height: 180px;
+    height: 100px;
 
     position: relative;
 
     overflow: hidden;
-}
 
-
-.card-image img {
-    width: 100%;
-    height: 100%;
-
-    display: block;
-
-    object-fit: cover;
-
-    transition:
-        transform 0.4s ease;
-}
-
-
-.card:hover
-.card-image img {
-    transform:
-        scale(1.08);
+    background:
+        linear-gradient(
+            135deg,
+            #dbeafe,
+            #cffafe
+        );
 }
 
 
 .skill-icon {
     position: absolute;
 
-    right: 14px;
+    left: 50%;
 
-    bottom: 12px;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
 
     width: 48px;
     height: 48px;
@@ -633,25 +600,6 @@ section {
     padding: 25px;
 
     border-radius: 25px;
-}
-
-
-.balance-image {
-    height: 250px;
-
-    overflow: hidden;
-
-    border-radius: 18px;
-
-    margin-bottom: 25px;
-}
-
-
-.balance-image img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
 }
 
 
@@ -937,11 +885,6 @@ footer {
     }
 
 
-    .intro-image {
-        min-height: 250px;
-    }
-
-
     .intro-content {
         padding:
             28px 22px;
@@ -1024,7 +967,7 @@ footer {
 
 
     .card-image {
-        height: 160px;
+        height: 90px;
     }
 
 
